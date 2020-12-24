@@ -24,3 +24,11 @@ pip3 install jsonslicer
 set VENV_NAME=`pyenv virtualenvs --bare | grep -E '^mp4gop' | sort | tail -n1` && pyenv activate $VENV_NAME
 ./show_gop_structure.py <path-to-mp4>
 ```
+
+# Courtesy
+
+Original script:
+https://gist.github.com/ragnraok/638023456771dc596e6f953b47061f0e
+
+Improvements:
+— using JSON SAX-parser for streaming GOP output (helpful for large mp4 files)
