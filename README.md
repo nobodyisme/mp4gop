@@ -21,7 +21,6 @@ pip3 install jsonslicer
 # How to run
 
 ```
-env VENV_NAME=`pyenv virtualenvs --bare | grep -E '^mp4gop' | sort | tail -n1`
-pyenv activate $VENV_NAME
+set VENV_NAME=`pyenv virtualenvs --bare | grep -E '^mp4gop' | sort | tail -n1` && pyenv activate $VENV_NAME
 ./show_gop_structure.py <path-to-mp4>
 ```
